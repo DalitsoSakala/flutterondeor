@@ -6,4 +6,5 @@ mixin ContextValuesMixin<T extends StatefulWidget> on State<T>{
   ColorScheme? get colorScheme_=>theme_.colorScheme;
   MediaQueryData get media_=>MediaQuery.of(context);
   Size get mediaSize_=>MediaQuery.sizeOf(context);
+  bool get isDarkTheme_=>theme_.brightness==Brightness.dark;
 }
